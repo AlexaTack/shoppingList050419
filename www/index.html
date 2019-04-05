@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <!-- <meta http-equiv="Content-Security-Policy"
+        content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;"> -->
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <!-- <link rel="stylesheet" type="text/css" href="css/index.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Shopping</title>
+</head>
+
+<body>
+    <h1>Welcome to your shopping cart!</h1>
+    
+    <p>These are your items.</p>
+    <br>
+    <!-- <button onclick="saveChanges()" class="button" style="vertical-align:middle"><span>SAVE</span></button> -->
+    <!-- <br><br> -->
+    <!-- standaard items -->
+    <table id="myTable">
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Quantity</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>banana</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>tomato</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>kiwi</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>pickle</td>
+                <td>12</td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br>
+    <!-- items toevoegen -->
+    <table>
+        <thead>
+            <tr>
+                <th>Add your items here</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Item</td>
+                <td>Quantity</td>
+            </tr>
+            <tr>
+                <td>
+                    <form id="myForm">
+                        <input type="text" name="newI" id="newItem" />
+                    </form>
+                </td>
+                <td>
+                    <form id="myForm1">
+                        <input type="text" name="newQ" id="newQuantity" />
+                    </form>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <button onclick="myFunction()" class="button" style="vertical-align:middle"><span>ADD TO LIST</span></button>
+    <br><br>
+    <!-- verwijderen van items -->
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    Delete your items here
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <form id="myFormDel">
+                        <input type="text" name="delete" id="deleteRow" />
+                    </form>
+                </td>
+                <td>
+                    (Select row number)
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <button onclick="deleteFunction()" class="button" style="vertical-align:middle"><span>DELETE</span></button>
+    <br>
+    <p class="footer">Alexander Tack - HBO5-ICT technieken - 05/04/2019 - Lab Mobile</p>
+    <!-- script die gebruikt wordt -->
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>
